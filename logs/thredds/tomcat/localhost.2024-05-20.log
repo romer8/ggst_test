@@ -1,0 +1,17 @@
+20-May-2024 01:33:40.061 INFO [main] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+20-May-2024 01:33:40.682 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
+20-May-2024 01:33:45.931 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring DispatcherServlet 'spring'
+20-May-2024 01:46:16.581 INFO [main] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+20-May-2024 01:46:17.223 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
+20-May-2024 01:46:22.223 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring DispatcherServlet 'spring'
+20-May-2024 01:54:45.163 INFO [Thread-5] org.apache.catalina.core.ApplicationContext.log Destroying Spring FrameworkServlet 'spring'
+20-May-2024 01:54:45.616 INFO [Thread-5] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+20-May-2024 01:55:49.293 INFO [main] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+20-May-2024 01:55:49.946 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
+20-May-2024 01:55:55.301 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring DispatcherServlet 'spring'
+20-May-2024 01:56:38.150 INFO [main] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+20-May-2024 01:56:38.746 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
+20-May-2024 01:56:44.163 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring DispatcherServlet 'spring'
+20-May-2024 02:12:45.027 INFO [main] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+20-May-2024 02:12:45.761 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
+20-May-2024 02:12:52.255 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring DispatcherServlet 'spring'

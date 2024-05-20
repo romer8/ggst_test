@@ -1,0 +1,196 @@
+Loading Tethys Extensions...
+Loading Tethys Apps...
+Warning: The app with root_url "ggst" specified a controller module "api" but the module "tethysapp.ggst.api" could not be imported. Any controllers in that module will not be registered.
+Warning: Found controller module "tethysapp.ggst.api", but it could not be imported because of the following error: No module named 'rest_framework'
+
+Traceback (most recent call last):
+  File "/usr/lib/tethys/tethys/tethys_apps/base/controller.py", line 705, in register_controllers
+    module = importlib.import_module(module)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/envs/tethys/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/conda/envs/tethys/lib/python3.12/site-packages/tethysapp/ggst/api.py", line 2, in <module>
+    from rest_framework.authentication import TokenAuthentication, SessionAuthentication
+ModuleNotFoundError: No module named 'rest_framework'
+
+Tethys Apps Loaded: ggst
+
+2024-05-20 02:14:03,806 INFO     AXES: BEGIN version 6.4.0, blocking by username
+2024-05-20 02:14:04,107 INFO     Starting server at fd:fileno=0, unix:/run/tethys_asgi0.sock
+2024-05-20 02:14:04,108 INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2024-05-20 02:14:04,108 INFO     Configuring endpoint fd:fileno=0
+2024-05-20 02:14:04,151 INFO     Listening on TCP address 127.0.0.1:8000
+2024-05-20 02:14:04,152 INFO     Configuring endpoint unix:/run/tethys_asgi0.sock
+Loading Tethys Extensions...
+Loading Tethys Apps...
+Tethys Apps Loaded: ggst
+
+2024-05-20 02:16:12,862 INFO     AXES: BEGIN version 6.4.0, blocking by username
+2024-05-20 02:16:13,349 INFO     Starting server at fd:fileno=0, unix:/run/tethys_asgi0.sock
+2024-05-20 02:16:13,349 INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2024-05-20 02:16:13,349 INFO     Configuring endpoint fd:fileno=0
+2024-05-20 02:16:13,402 INFO     Listening on TCP address 127.0.0.1:8000
+2024-05-20 02:16:13,403 INFO     Configuring endpoint unix:/run/tethys_asgi0.sock
+2024-05-20 02:16:38,402 INFO     AXES: Cleaned up 0 expired access attempts from database that were older than 2024-05-20 01:46:37.862479+00:00
+2024-05-20 02:16:38,403 INFO     AXES: Successful login by {username: "********************", ip_address: "********************", user_agent: "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36", path_info: "/accounts/login/"}.
+2024-05-20 02:16:38,435 INFO     AXES: Reset 0 access attempts from database.
+2024-05-20 02:16:38,435 INFO     AXES: Deleted 0 failed login attempts by {username: "********************", ip_address: "********************", user_agent: "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36", path_info: "/accounts/login/"} from database.
+ERROR Internal Server Error: /apps/ggst/global-map/
+Traceback (most recent call last):
+  File "/opt/conda/envs/tethys/lib/python3.12/site-packages/xarray/backends/file_manager.py", line 211, in _acquire_with_cache_info
+    file = self._cache[self._key]
+           ~~~~~~~~~~~^^^^^^^^^^^
+  File "/opt/conda/envs/tethys/lib/python3.12/site-packages/xarray/backends/lru_cache.py", line 56, in __getitem__
+    value = self._cache[key]
+            ~~~~~~~~~~~^^^^^
+KeyError: [<class 'netCDF4._netCDF4.Dataset'>, ('/var/lib/tethys_persist/thredds_data/ggst/GRC_tws.nc',), 'r', (('clobber', True), ('diskless', False), ('format', 'NETCDF4'), ('persist', False)), '6c51b47c-88c3-419b-a29d-95106ecc7123']
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/conda/envs/tethys/lib/python3.12/site-packages/asgiref/sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "/opt/conda/envs/tethys/lib/python3.12/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/envs/tethys/lib/python3.12/site-packages/asgiref/sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "/opt/conda/envs/tethys/lib/python3.12/site-packages/django/core/handlers/base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/envs/tethys/lib/python3.12/site-packages/asgiref/sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/envs/tethys/lib/python3.12/site-packages/asgiref/current_thread_executor.py", line 40, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/envs/tethys/lib/python3.12/site-packages/asgiref/sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/tethys/tethys/tethys_apps/decorators.py", line 40, in wrapper
+    return controller(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/envs/tethys/lib/python3.12/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/envs/tethys/lib/python3.12/site-packages/tethysapp/ggst/controllers.py", line 39, in global_map
+    layer_select = get_layer_select("tws")
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/envs/tethys/lib/python3.12/site-packages/tethysapp/ggst/utils.py", line 132, in get_layer_select
+    options=get_grace_timestep_options(storage_type),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/envs/tethys/lib/python3.12/site-packages/tethysapp/ggst/utils.py", line 116, in get_grace_timestep_options
+    ds = xarray.open_dataset(nc_file)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/envs/tethys/lib/python3.12/site-packages/xarray/backends/api.py", line 571, in open_dataset
+    backend_ds = backend.open_dataset(
+                 ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/envs/tethys/lib/python3.12/site-packages/xarray/backends/netCDF4_.py", line 646, in open_dataset
+    store = NetCDF4DataStore.open(
+            ^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/envs/tethys/lib/python3.12/site-packages/xarray/backends/netCDF4_.py", line 409, in open
+    return cls(manager, group=group, mode=mode, lock=lock, autoclose=autoclose)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/envs/tethys/lib/python3.12/site-packages/xarray/backends/netCDF4_.py", line 356, in __init__
+    self.format = self.ds.data_model
+                  ^^^^^^^
+  File "/opt/conda/envs/tethys/lib/python3.12/site-packages/xarray/backends/netCDF4_.py", line 418, in ds
+    return self._acquire()
+           ^^^^^^^^^^^^^^^
+  File "/opt/conda/envs/tethys/lib/python3.12/site-packages/xarray/backends/netCDF4_.py", line 412, in _acquire
+    with self._manager.acquire_context(needs_lock) as root:
+  File "/opt/conda/envs/tethys/lib/python3.12/contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "/opt/conda/envs/tethys/lib/python3.12/site-packages/xarray/backends/file_manager.py", line 199, in acquire_context
+    file, cached = self._acquire_with_cache_info(needs_lock)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/envs/tethys/lib/python3.12/site-packages/xarray/backends/file_manager.py", line 217, in _acquire_with_cache_info
+    file = self._opener(*self._args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "src/netCDF4/_netCDF4.pyx", line 2469, in netCDF4._netCDF4.Dataset.__init__
+  File "src/netCDF4/_netCDF4.pyx", line 2028, in netCDF4._netCDF4._ensure_nc_success
+FileNotFoundError: [Errno 2] No such file or directory: '/var/lib/tethys_persist/thredds_data/ggst/GRC_tws.nc'
+2024-05-20 02:16:57,398 ERROR    Internal Server Error: /apps/ggst/global-map/
+Traceback (most recent call last):
+  File "/opt/conda/envs/tethys/lib/python3.12/site-packages/xarray/backends/file_manager.py", line 211, in _acquire_with_cache_info
+    file = self._cache[self._key]
+           ~~~~~~~~~~~^^^^^^^^^^^
+  File "/opt/conda/envs/tethys/lib/python3.12/site-packages/xarray/backends/lru_cache.py", line 56, in __getitem__
+    value = self._cache[key]
+            ~~~~~~~~~~~^^^^^
+KeyError: [<class 'netCDF4._netCDF4.Dataset'>, ('/var/lib/tethys_persist/thredds_data/ggst/GRC_tws.nc',), 'r', (('clobber', True), ('diskless', False), ('format', 'NETCDF4'), ('persist', False)), '6c51b47c-88c3-419b-a29d-95106ecc7123']
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/conda/envs/tethys/lib/python3.12/site-packages/asgiref/sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "/opt/conda/envs/tethys/lib/python3.12/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/envs/tethys/lib/python3.12/site-packages/asgiref/sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "/opt/conda/envs/tethys/lib/python3.12/site-packages/django/core/handlers/base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/envs/tethys/lib/python3.12/site-packages/asgiref/sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/envs/tethys/lib/python3.12/site-packages/asgiref/current_thread_executor.py", line 40, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/envs/tethys/lib/python3.12/site-packages/asgiref/sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/tethys/tethys/tethys_apps/decorators.py", line 40, in wrapper
+    return controller(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/envs/tethys/lib/python3.12/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/envs/tethys/lib/python3.12/site-packages/tethysapp/ggst/controllers.py", line 39, in global_map
+    layer_select = get_layer_select("tws")
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/envs/tethys/lib/python3.12/site-packages/tethysapp/ggst/utils.py", line 132, in get_layer_select
+    options=get_grace_timestep_options(storage_type),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/envs/tethys/lib/python3.12/site-packages/tethysapp/ggst/utils.py", line 116, in get_grace_timestep_options
+    ds = xarray.open_dataset(nc_file)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/envs/tethys/lib/python3.12/site-packages/xarray/backends/api.py", line 571, in open_dataset
+    backend_ds = backend.open_dataset(
+                 ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/envs/tethys/lib/python3.12/site-packages/xarray/backends/netCDF4_.py", line 646, in open_dataset
+    store = NetCDF4DataStore.open(
+            ^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/envs/tethys/lib/python3.12/site-packages/xarray/backends/netCDF4_.py", line 409, in open
+    return cls(manager, group=group, mode=mode, lock=lock, autoclose=autoclose)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/envs/tethys/lib/python3.12/site-packages/xarray/backends/netCDF4_.py", line 356, in __init__
+    self.format = self.ds.data_model
+                  ^^^^^^^
+  File "/opt/conda/envs/tethys/lib/python3.12/site-packages/xarray/backends/netCDF4_.py", line 418, in ds
+    return self._acquire()
+           ^^^^^^^^^^^^^^^
+  File "/opt/conda/envs/tethys/lib/python3.12/site-packages/xarray/backends/netCDF4_.py", line 412, in _acquire
+    with self._manager.acquire_context(needs_lock) as root:
+  File "/opt/conda/envs/tethys/lib/python3.12/contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "/opt/conda/envs/tethys/lib/python3.12/site-packages/xarray/backends/file_manager.py", line 199, in acquire_context
+    file, cached = self._acquire_with_cache_info(needs_lock)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/envs/tethys/lib/python3.12/site-packages/xarray/backends/file_manager.py", line 217, in _acquire_with_cache_info
+    file = self._opener(*self._args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "src/netCDF4/_netCDF4.pyx", line 2469, in netCDF4._netCDF4.Dataset.__init__
+  File "src/netCDF4/_netCDF4.pyx", line 2028, in netCDF4._netCDF4._ensure_nc_success
+FileNotFoundError: [Errno 2] No such file or directory: '/var/lib/tethys_persist/thredds_data/ggst/GRC_tws.nc'

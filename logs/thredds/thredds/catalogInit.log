@@ -1,0 +1,68 @@
+You are currently running TDS version 5.4 - 2022-07-01T12:01:49-0600
+Latest Available TDS Version Info:
+    latest development version = 5.5-SNAPSHOT
+    latest release version = 5.4
+
+=========================================================================================
+ConfigCatalogInitialization readMode=always isStartup=true
+DatasetTrackerChronicle opened success on '/usr/local/tomcat/content/thredds/cache/catalog/chronicle.datasets.dat.1'
+ConfigCatalogInitializion datasetTracker database does not exist, set readMode to=always
+ConfigCatalogInit: initializing 1 root catalogs.
+Checking catalogRoot = catalog.xml
+-------readCatalog(): path=catalog.xml
+Added global service Service{ name=all, base=, typeS=compound
+  Service{ name=odap, base=/thredds/dodsC/, typeS=OpenDAP,desc=Access dataset through OPeNDAP using the DAP2 protcol.}
+  Service{ name=dap4, base=/thredds/dap4/, typeS=DAP4,desc=Access dataset through OPeNDAP using the DAP4 protocol.}
+  Service{ name=http, base=/thredds/fileServer/, typeS=HTTPServer,desc=HTTP file download.}
+  Service{ name=wcs, base=/thredds/wcs/, typeS=WCS,desc=Supports access to geospatial data as 'coverages'.}
+  Service{ name=wms, base=/thredds/wms/, typeS=WMS,desc=Supports access to georegistered map images from geoscience datasets.}
+  Service{ name=ncssGrid, base=/thredds/ncss/grid/, typeS=NetcdfSubset,desc=A web service for subsetting CDM scientific datasets.}
+  Service{ name=ncssPoint, base=/thredds/ncss/point/, typeS=NetcdfSubset,desc=A web service for subsetting CDM scientific datasets.}
+  Service{ name=cdmremote, base=/thredds/cdmremote/, typeS=CdmRemote,desc=Provides index subsetting on remote CDM datasets, using ncstream.}
+  Service{ name=iso, base=/thredds/iso/, typeS=ISO,desc=Provide ISO 19115 metdata representation of a dataset's structure and metadata.}
+  Service{ name=ncml, base=/thredds/ncml/, typeS=NCML,desc=Provide NCML representation of a dataset.}
+  Service{ name=uddc, base=/thredds/uddc/, typeS=UDDC,desc=An evaluation of how well the metadata contained in the dataset conforms to the NetCDF Attribute Convention for Data Discovery (NACDD)}
+}
+
+-------readCatalog(): path=enhancedCatalog.xml
+
+ConfigCatalogInitializion stats
+ConfigCatalogInitialization started 2024-05-20T02:12:51.762Z took 0.286000 secs using readMode=always
+         catalogs=2
+         datasets=7
+  trackedDatasets=0
+           restrict=0
+            hasNcml=0
+
+      dataRoot=3
+    featCollect=0
+    datasetScan=2
+    catalogScan=0
+    datasetRoot=1
+
+DatasetExt.total_count 0
+DatasetExt.total_nbytes 0
+DatasetExt.avg_nbytes     0
+
+restrict (0)
+
+nAccess (2)
+             0: count = 4
+            11: count = 3
+
+serviceType (11)
+    Service{ name=cdmremote, base=/thredds/cdmremote/, typeS=CdmRemote,desc=Provides index subsetting on remote CDM datasets, using ncstream.}: count = 3
+    Service{ name=dap4, base=/thredds/dap4/, typeS=DAP4,desc=Access dataset through OPeNDAP using the DAP4 protocol.}: count = 3
+    Service{ name=http, base=/thredds/fileServer/, typeS=HTTPServer,desc=HTTP file download.}: count = 3
+    Service{ name=iso, base=/thredds/iso/, typeS=ISO,desc=Provide ISO 19115 metdata representation of a dataset's structure and metadata.}: count = 3
+    Service{ name=ncml, base=/thredds/ncml/, typeS=NCML,desc=Provide NCML representation of a dataset.}: count = 3
+    Service{ name=ncssGrid, base=/thredds/ncss/grid/, typeS=NetcdfSubset,desc=A web service for subsetting CDM scientific datasets.}: count = 3
+    Service{ name=ncssPoint, base=/thredds/ncss/point/, typeS=NetcdfSubset,desc=A web service for subsetting CDM scientific datasets.}: count = 3
+    Service{ name=odap, base=/thredds/dodsC/, typeS=OpenDAP,desc=Access dataset through OPeNDAP using the DAP2 protcol.}: count = 3
+    Service{ name=uddc, base=/thredds/uddc/, typeS=UDDC,desc=An evaluation of how well the metadata contained in the dataset conforms to the NetCDF Attribute Convention for Data Discovery (NACDD)}: count = 3
+    Service{ name=wcs, base=/thredds/wcs/, typeS=WCS,desc=Supports access to geospatial data as 'coverages'.}: count = 3
+    Service{ name=wms, base=/thredds/wms/, typeS=WMS,desc=Supports access to georegistered map images from geoscience datasets.}: count = 3
+
+ncmlAggSize (0)
+
+ConfigCatalogInitializion finished took=400 msecs

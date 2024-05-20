@@ -1,0 +1,64 @@
+2024-05-20T02:12:45.769+0000 [      7793][        ] INFO  org.springframework.web.context.ContextLoader: Root WebApplicationContext: initialization started
+2024-05-20T02:12:46.339+0000 [      8363][        ] INFO  org.springframework.security.core.SpringSecurityCoreVersion: You are running with Spring Security Core 5.6.5
+2024-05-20T02:12:46.341+0000 [      8365][        ] INFO  org.springframework.security.config.SecurityNamespaceHandler: Spring Security 'config' module version is 5.6.5
+2024-05-20T02:12:47.200+0000 [      9224][        ] INFO  org.hibernate.validator.internal.util.Version: HV000001: Hibernate Validator 6.1.5.Final
+2024-05-20T02:12:48.388+0000 [     10412][        ] WARN  serverStartup: TdsContext.init(): "tds.upload.dir" property isn't defined.
+2024-05-20T02:12:48.389+0000 [     10413][        ] WARN  serverStartup: TdsContext.init(): "tds.upload.form" property isn't defined.
+2024-05-20T02:12:48.389+0000 [     10413][        ] WARN  serverStartup: TdsContext.init(): "tds.download.dir" property isn't defined.
+2024-05-20T02:12:48.389+0000 [     10413][        ] WARN  serverStartup: TdsContext.init(): "tds.download.form" property isn't defined.
+2024-05-20T02:12:48.392+0000 [     10416][        ] INFO  serverStartup: TdsContext.init(): Copying root README file from /usr/local/tomcat/webapps/thredds/WEB-INF/altContent/startup/root_README.txt.
+2024-05-20T02:12:48.395+0000 [     10419][        ] INFO  serverStartup: TdsContext.init(): Copying thredds README file from /usr/local/tomcat/webapps/thredds/WEB-INF/altContent/startup/thredds_README.txt.
+2024-05-20T02:12:48.395+0000 [     10419][        ] INFO  serverStartup: TdsContext.init(): Copying default catalog file from /usr/local/tomcat/webapps/thredds/WEB-INF/altContent/startup/catalog.xml.
+2024-05-20T02:12:48.395+0000 [     10419][        ] INFO  serverStartup: TdsContext.init(): Copying default enhanced catalog file from /usr/local/tomcat/webapps/thredds/WEB-INF/altContent/startup/enhancedCatalog.xml.
+2024-05-20T02:12:48.396+0000 [     10420][        ] INFO  serverStartup: TdsContext.init(): Copying default testdata directory from /usr/local/tomcat/webapps/thredds/WEB-INF/altContent/startup/public/testdata.
+2024-05-20T02:12:48.399+0000 [     10423][        ] INFO  serverStartup: TdsContext.init(): Copying default THREDDS config file from /usr/local/tomcat/webapps/thredds/WEB-INF/altContent/startup/threddsConfig.xml.
+2024-05-20T02:12:48.399+0000 [     10423][        ] INFO  serverStartup: TdsContext.init(): Copying default WMS config file from /usr/local/tomcat/webapps/thredds/WEB-INF/altContent/startup/wmsConfig.xml.
+2024-05-20T02:12:48.400+0000 [     10424][        ] INFO  serverStartup: TdsContext.init(): Copying default template fragments file from /usr/local/tomcat/webapps/thredds/WEB-INF/altContent/startup/tdsTemplateFragments.html.
+2024-05-20T02:12:48.400+0000 [     10424][        ] INFO  serverStartup: TdsContext.init(): Copying default jupyter notebook file /usr/local/tomcat/webapps/thredds/WEB-INF/altContent/startup/jupyter_notebooks/default_viewer.ipynb.
+2024-05-20T02:12:48.401+0000 [     10425][        ] INFO  serverStartup: TdsContext version= 5.4 - 2022-07-01T12:01:49-0600
+2024-05-20T02:12:48.401+0000 [     10425][        ] INFO  serverStartup: TdsContext initialized logging in /usr/local/tomcat/content/thredds/logs
+2024-05-20T02:12:48.625+0000 [     10649][        ] INFO  serverStartup: DataRootManager:2 aliases set 
+2024-05-20T02:12:48.745+0000 [     10769][        ] INFO  serverStartup: thredds.server.reify.DownloadController initialization
+2024-05-20T02:12:48.754+0000 [     10778][        ] INFO  serverStartup: thredds.server.reify.UploadController initialization
+2024-05-20T02:12:48.912+0000 [     10936][        ] INFO  org.springframework.security.web.DefaultSecurityFilterChain: Will secure Ant [pattern='/dap4/**'] with [thredds.servlet.filter.HttpHeadFilter@26e629eb, thredds.servlet.filter.RequestQueryFilter@16de242d, thredds.servlet.filter.RequestBracketingLogMessageFilter@48518a36]
+2024-05-20T02:12:48.914+0000 [     10938][        ] INFO  org.springframework.security.web.DefaultSecurityFilterChain: Will secure Ant [pattern='/dodsC/**'] with [thredds.servlet.filter.HttpHeadFilter@26e629eb, thredds.servlet.filter.RequestQueryFilter@16de242d, thredds.servlet.filter.RequestBracketingLogMessageFilter@48518a36]
+2024-05-20T02:12:48.918+0000 [     10942][        ] INFO  org.springframework.security.web.DefaultSecurityFilterChain: Will secure Ant [pattern='/wms/**'] with [thredds.servlet.filter.HttpHeadFilter@26e629eb, thredds.servlet.filter.RequestQueryFilter@16de242d, thredds.servlet.filter.RequestBracketingLogMessageFilter@48518a36]
+2024-05-20T02:12:48.921+0000 [     10945][        ] INFO  org.springframework.security.web.DefaultSecurityFilterChain: Will secure Ant [pattern='/fileServer/**'] with [thredds.servlet.filter.RequestQueryFilter@22ff3247, thredds.servlet.filter.RequestBracketingLogMessageFilter@48518a36]
+2024-05-20T02:12:48.923+0000 [     10947][        ] INFO  org.springframework.security.web.DefaultSecurityFilterChain: Will secure any request with [thredds.servlet.filter.HttpHeadFilter@26e629eb, thredds.servlet.filter.RequestQueryFilter@22ff3247, thredds.servlet.filter.RequestBracketingLogMessageFilter@48518a36]
+2024-05-20T02:12:48.954+0000 [     10978][        ] INFO  serverStartup: TdsInit: org.springframework.context.event.ContextRefreshedEvent[source=Root WebApplicationContext, started on Mon May 20 02:12:45 UTC 2024]
+2024-05-20T02:12:48.956+0000 [     10980][        ] INFO  serverStartup: TdsInit: getContentRootPathAbsolute= /usr/local/tomcat/content/
+2024-05-20T02:12:48.964+0000 [     10988][        ] INFO  serverStartup: TdsInit: makeDir= /usr/local/tomcat/content/thredds/state ok=true
+2024-05-20T02:12:48.971+0000 [     10995][        ] INFO  serverStartup: ThreddsConfigReader reading xml file = /usr/local/tomcat/content/thredds/threddsConfig.xml
+2024-05-20T02:12:50.490+0000 [     12514][        ] INFO  serverStartup: TdsInit: catalogWriting.useBytesForDataSize= false
+2024-05-20T02:12:50.597+0000 [     12621][        ] INFO  serverStartup: Nc4Iosp: NetCDF-4 C library loaded (jna_path='null', libname='netcdf' version='4.9.2 of May  8 2024 00:28:45 $').
+2024-05-20T02:12:50.599+0000 [     12623][        ] INFO  serverStartup: NetcdfLoader: set log level: old=0 new=0
+2024-05-20T02:12:50.599+0000 [     12623][        ] INFO  serverStartup: Nc4Iosp: set log level: old=0 new=0
+2024-05-20T02:12:50.605+0000 [     12629][        ] INFO  serverStartup: TdsInit: Aggregation.setTypicalDatasetMode= penultimate
+2024-05-20T02:12:50.618+0000 [     12642][        ] INFO  serverStartup: TdsInit: CdmCache= /usr/local/tomcat/content/thredds/cache/cdm scour = 3600 maxSize = 1000000000
+2024-05-20T02:12:50.629+0000 [     12653][        ] INFO  serverStartup: TdsInit: AggregationCache= /usr/local/tomcat/content/thredds/cache/agg scour = 86400 maxAgeSecs = 7776000
+2024-05-20T02:12:50.631+0000 [     12655][        ] INFO  serverStartup: TdsInit: GribIndex=DiskCache2{cachePathPolicy=NestedDirectory, alwaysUseCache=false, cachePathPolicyParam='null', root='/usr/local/tomcat/content/thredds/cache/grib/', scourEveryMinutes=0, persistMinutes=129600, fail=false}
+2024-05-20T02:12:50.704+0000 [     12728][        ] INFO  serverStartup: thredds.server.ncss.controller.NcssDiskCacheNcss.Cache= /usr/local/tomcat/content/thredds/cache/ncss scour = 900 maxAgeSecs = 1800
+2024-05-20T02:12:51.149+0000 [     13173][        ] INFO  serverStartup: TdsInit: GridDatasetInv cache= /usr/local/tomcat/content/thredds/cache/collection/
+2024-05-20T02:12:51.172+0000 [     13196][        ] INFO  serverStartup: TdsInit: RandomAccessFile.initPartitionCache= [400,500] scour = 660
+2024-05-20T02:12:51.174+0000 [     13198][        ] INFO  serverStartup: TdsInit: NetcdfDatasets.initNetcdfFileCache= [100,150] scour = 720
+2024-05-20T02:12:51.182+0000 [     13206][        ] INFO  serverStartup: TdsInit: NetcdfDataset.initNetcdfFileCache= [100,150] scour = 720
+2024-05-20T02:12:51.206+0000 [     13230][        ] INFO  serverStartup: TdsInit: GribCdmIndex.initDefaultCollectionCache= [100,150] scour = 780
+2024-05-20T02:12:51.206+0000 [     13230][        ] INFO  serverStartup: TdsInit: tracker directory /usr/local/tomcat/content/thredds/cache/catalog make ok = true
+2024-05-20T02:12:51.727+0000 [     13751][        ] INFO  serverStartup: TdsInit: latest development version = 5.5-SNAPSHOT
+2024-05-20T02:12:51.727+0000 [     13751][        ] INFO  serverStartup: TdsInit: latest release version = 5.4
+2024-05-20T02:12:51.728+0000 [     13752][        ] WARN  serverStartup: Web Start has been deprecated for >Java 9 and is slated for removal - see http://www.oracle.com/technetwork/java/eol-135779.html)
+2024-05-20T02:12:52.131+0000 [     14155][        ] INFO  serverStartup: TdsInit complete
+2024-05-20T02:12:52.133+0000 [     14157][        ] INFO  serverStartup: thredds.server.opendap.OpendapServlet initialization start
+2024-05-20T02:12:52.136+0000 [     14160][        ] INFO  serverStartup: thredds.server.opendap.OpendapServlet version= opendap/3.7 ascLimit = 50 binLimit = 500
+2024-05-20T02:12:52.136+0000 [     14160][        ] INFO  serverStartup: thredds.server.opendap.OpendapServlet initialization done
+2024-05-20T02:12:52.137+0000 [     14161][        ] INFO  serverStartup: WCS:allow= true
+2024-05-20T02:12:52.146+0000 [     14170][        ] INFO  serverStartup: WCS service - init done - 
+2024-05-20T02:12:52.146+0000 [     14170][        ] INFO  serverStartup: Metadata ISO - initialization start
+2024-05-20T02:12:52.147+0000 [     14171][        ] INFO  serverStartup: NCISO.isoAllow = true
+2024-05-20T02:12:52.148+0000 [     14172][        ] INFO  serverStartup: Metadata UDDC - initialization start
+2024-05-20T02:12:52.149+0000 [     14173][        ] INFO  serverStartup: NCISO.uddcAllow = true
+2024-05-20T02:12:52.150+0000 [     14174][        ] INFO  serverStartup: Metadata NCML - initialization start
+2024-05-20T02:12:52.151+0000 [     14175][        ] INFO  serverStartup: NCISO.ncmlAllow = true
+2024-05-20T02:12:52.158+0000 [     14182][        ] INFO  org.springframework.web.context.ContextLoader: Root WebApplicationContext initialized in 6381 ms
+2024-05-20T02:12:52.255+0000 [     14279][        ] INFO  org.springframework.web.servlet.DispatcherServlet: Initializing Servlet 'spring'
+2024-05-20T02:12:52.641+0000 [     14665][        ] INFO  org.springframework.web.servlet.DispatcherServlet: Completed initialization in 385 ms

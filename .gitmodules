@@ -1,0 +1,4 @@
+[submodule "ggst"]
+	path = ggst
+	url = git@github.com:BYU-Hydroinformatics/ggst.git
+	branch = tethys4_upgrade

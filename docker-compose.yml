@@ -1,0 +1,50 @@
+version: '3.8'
+services:
+  thredds:
+    image: unidata/thredds-docker:5.4
+    restart: always
+    networks:
+      - 'internal'
+      - 'external'
+    ports:
+      - '8080:8080'
+    env_file:
+      - ./env/thredds.env
+    volumes:
+      - ./data/thredds/:/usr/local/tomcat/content/thredds
+      - ./logs/thredds/tomcat/:/usr/local/tomcat/logs/
+      - ./logs/thredds/thredds/:/usr/local/tomcat/content/thredds/logs/
+      - ./data/tethys/thredds_data/:/usr/local/tomcat/content/thredds/public/testdata
+  redis:
+    image: redis:latest
+    restart: always
+    networks:
+      - 'internal'
+    ports:
+      - '6379:6379'
+  web:
+    image: tethys-portal-docker:latest
+    build: .
+    restart: always
+    depends_on:
+      - 'thredds'
+      - 'redis'
+    networks:
+      - 'internal'
+      - 'external'
+    ports:
+      - '80:80'
+    env_file:
+      - ./env/web.env
+    volumes:
+      - ./data/tethys:/var/lib/tethys_persist
+      - ./logs/tethys:/var/log/tethys
+    deploy:
+      resources:
+        limits:
+          cpus: '2.0' # I have change this to my specs
+          memory: 8G # I have change this to my specs
+networks:
+  internal:
+    internal: true
+  external:

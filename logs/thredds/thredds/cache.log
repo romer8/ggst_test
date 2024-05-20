@@ -1,0 +1,22 @@
+[2024-05-20T01:33:44.759+0000] Started a DiskCache2 scour task on /usr/local/tomcat/content/thredds/cache/agg every 1440 minutes for files older than 129600 minutes
+[2024-05-20T01:33:44.759+0000] Started a DiskCache2 scour task on /usr/local/tomcat/content/thredds/cache/aggNew/ every 1440 minutes for files older than 129600 minutes
+[2024-05-20T01:33:44.813+0000] Started a DiskCache2 scour task on /usr/local/tomcat/content/thredds/cache/ncss every 15 minutes for files older than 30 minutes
+[2024-05-20T01:33:45.897+0000] Started a DiskCache2 scour task on /usr/local/tomcat/content/thredds/cache/wcs every 10 minutes for files older than 5 minutes
+[2024-05-20T01:46:21.223+0000] Started a DiskCache2 scour task on /usr/local/tomcat/content/thredds/cache/agg every 1440 minutes for files older than 129600 minutes
+[2024-05-20T01:46:21.224+0000] Started a DiskCache2 scour task on /usr/local/tomcat/content/thredds/cache/aggNew/ every 1440 minutes for files older than 129600 minutes
+[2024-05-20T01:46:21.277+0000] Started a DiskCache2 scour task on /usr/local/tomcat/content/thredds/cache/ncss every 15 minutes for files older than 30 minutes
+[2024-05-20T01:46:22.188+0000] Started a DiskCache2 scour task on /usr/local/tomcat/content/thredds/cache/wcs every 10 minutes for files older than 5 minutes
+[2024-05-20T01:54:45.623+0000] FileCache.shutdown called%n
+[2024-05-20T01:54:45.624+0000] DiskCache2.exit()%n
+[2024-05-20T01:55:54.154+0000] Started a DiskCache2 scour task on /usr/local/tomcat/content/thredds/cache/agg every 1440 minutes for files older than 129600 minutes
+[2024-05-20T01:55:54.155+0000] Started a DiskCache2 scour task on /usr/local/tomcat/content/thredds/cache/aggNew/ every 1440 minutes for files older than 129600 minutes
+[2024-05-20T01:55:54.209+0000] Started a DiskCache2 scour task on /usr/local/tomcat/content/thredds/cache/ncss every 15 minutes for files older than 30 minutes
+[2024-05-20T01:55:55.258+0000] Started a DiskCache2 scour task on /usr/local/tomcat/content/thredds/cache/wcs every 10 minutes for files older than 5 minutes
+[2024-05-20T01:56:42.897+0000] Started a DiskCache2 scour task on /usr/local/tomcat/content/thredds/cache/agg every 1440 minutes for files older than 129600 minutes
+[2024-05-20T01:56:42.897+0000] Started a DiskCache2 scour task on /usr/local/tomcat/content/thredds/cache/aggNew/ every 1440 minutes for files older than 129600 minutes
+[2024-05-20T01:56:42.958+0000] Started a DiskCache2 scour task on /usr/local/tomcat/content/thredds/cache/ncss every 15 minutes for files older than 30 minutes
+[2024-05-20T01:56:44.109+0000] Started a DiskCache2 scour task on /usr/local/tomcat/content/thredds/cache/wcs every 10 minutes for files older than 5 minutes
+[2024-05-20T02:12:50.622+0000] Started a DiskCache2 scour task on /usr/local/tomcat/content/thredds/cache/agg every 1440 minutes for files older than 129600 minutes
+[2024-05-20T02:12:50.623+0000] Started a DiskCache2 scour task on /usr/local/tomcat/content/thredds/cache/aggNew/ every 1440 minutes for files older than 129600 minutes
+[2024-05-20T02:12:50.694+0000] Started a DiskCache2 scour task on /usr/local/tomcat/content/thredds/cache/ncss every 15 minutes for files older than 30 minutes
+[2024-05-20T02:12:52.138+0000] Started a DiskCache2 scour task on /usr/local/tomcat/content/thredds/cache/wcs every 10 minutes for files older than 5 minutes
